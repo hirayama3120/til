@@ -19,3 +19,7 @@
                     - <=> が 0 を返した時に、true を返す
                     - それ以外を返した場合は、false を返す
     - https://rurema.clear-code.com/library:_builtin/type:instance-method/query:comparable/query:%3E/version:2.3.0/
+- require メソッド
+    - $LOAD_PATHに指定されているパスからの相対パスで該当のファイルを参照する
+- require_relativeメソッド
+    - require_relativeが記述されたファイルからの相対パスを参照する
