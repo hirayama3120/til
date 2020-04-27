@@ -28,3 +28,11 @@
             ```
             Rangeオブジェクト.getValues();
             ```
+    - セル書き込み
+        ```
+        Rangeオブジェクト.setValue(data);
+        ```
+    - メッセージボックス表示
+        ```
+        Browser.msgBox("メッセージ")
+        ```
