@@ -36,3 +36,22 @@
         ```
         Browser.msgBox("メッセージ")
         ```
+    - チェックボックス
+        - 挿入
+            ```
+            Rangeオブジェクト.insertCheckboxes();
+            ```
+        - 削除
+            ```
+            Rangeオブジェクト.removeCheckboxes();
+            ```
+    - 罫線設定
+        - on: true, off: false, no change: null
+            ```
+            Rangeオブジェクト.setBorder(top, left, bottom, right, vertical, horizontal);
+            ```
+    - セルクリア
+        - 全てクリア
+            ```
+            Rangeオブジェクト.clear();
+            ```
