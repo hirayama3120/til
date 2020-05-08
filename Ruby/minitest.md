@@ -7,6 +7,12 @@
         - シンタックス: DSL(ドメイン固有言語)
         - RSpecに近い形式
         - describe,contextが使える
+- spec
+    - RSpec風のDSLが使えるようになる
+    ```
+    require 'minitest/spec'
+    ```
+ 
 - autorun
     - autorunをrequireするとファイルを実行するとテストが実行されるようになる
     ```
