@@ -11,9 +11,13 @@
         var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('テーブル名');
         ```
     - Rangeオブジェクト(セル範囲)の取得
-        - 行数指定
+        - 行, 列, 行数, 列数指定
             ```
-            var range = sheet.getRange(行番号, 列番号, 行数)
+            var range = sheet.getRange(行番号, 列番号, 行数, 列数)
+            ```
+        - A1形式指定
+            ```
+            var range = sheet.getRange("A1:A1")
             ```
     - 列で値が設定されている最終の行番号を取得
         ```
@@ -59,3 +63,21 @@
             ```
             Rangeオブジェクト.clear();
             ```
+   - 数値をアルファベットに変換(1 -> A, 3 -> C)
+      ```
+      function ConvertToLetter(iCol) {
+        var str = "";
+        var iAlpha = 0;
+        var iRemainder = 0;
+         
+        iAlpha = parseInt((iCol / 26), 10);
+        iRemainder = iCol - (iAlpha * 26);
+        if(iAlpha > 0) {
+          str = String.fromCharCode(iAlpha + 64);
+        }
+        if(iRemainder >= 0) {
+          str = str + String.fromCharCode(iRemainder + 65);
+        }
+        return str;
+      }
+      ```
