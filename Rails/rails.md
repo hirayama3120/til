@@ -5,6 +5,10 @@
         - 以下を行うことでmigrationファイルの内容でデータベース構造が変更される
             1. migrationファイル作成
             1. rails db:migrateコマンド実行
+- Webpacker
+    - Webpackがrailsで使用できるようになるgem
+        - Webpack
+            - Webアプリケーションを構成するリソースを1つにまとめるモジュールバンドラー
 - rails test実行時にエラー発生
     ```
     xxxx-xx-xx xx:xx:xx WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecated. Use Selenium::WebDriver::Chrome::Service#driver_path= instead.
