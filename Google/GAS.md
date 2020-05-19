@@ -63,7 +63,7 @@
             ```
             Rangeオブジェクト.clear();
             ```
-   - 数値をアルファベットに変換(1 -> A, 3 -> C)
+   - 数値をアルファベットに変換(0 -> A, 2 -> C)
       ```
       function ConvertToLetter(iCol) {
         var str = "";
