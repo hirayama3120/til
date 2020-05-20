@@ -5,6 +5,13 @@
         - 以下を行うことでmigrationファイルの内容でデータベース構造が変更される
             1. migrationファイル作成
             1. rails db:migrateコマンド実行
+- React-Rails
+    - RailsがwebpackによってビルドされたJavaScriptファイルを読み込めるよう、webpackerのjavascript_pack_tag helperを指定する必要がある
+        - app/views/layouts/application.html.erbにjavascript_pack_tagを追加
+            ```
+            <%= javascript_pack_tag 'application' %>
+            ```
+        - ※Rails6の場合は、デフォルトで追加される
 - Webpacker
     - Webpackがrailsで使用できるようになるgem
         - Webpack
