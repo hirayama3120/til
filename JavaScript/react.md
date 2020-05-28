@@ -1,2 +1,11 @@
 # React
 ## UIに特化したJavaScriptフレームワーク
+- JSX
+    - HTMLの様なタグを直接JavaScriptのスクリプトに記述する仕組み
+- 状態管理
+    - props
+        - 親コンポーネントから渡されたプロパティ
+        - immutableなデータで変更可能
+    - state
+        - コンポーネントが持っている状態
+        - mutableなデータで変更可能
