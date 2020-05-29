@@ -7,6 +7,21 @@
             1. rails db:migrateコマンド実行
 - HTTPステータスのシンボル表現
     - Controllerからのステータにシンボルが使用できる(200 -> :ok, 201 -> :created 等)
+- あいまい検索
+    - 完全一致
+        ```
+        モデル名.where('カラム名 like ?','検索文字列')
+        ```
+    - 前方一致
+        - % 任意の0文字以上の文字列
+            ```
+            モデル名.where('カラム名 like ?','検索文字列%')
+            ```
+
+- レコード数取得
+    ```
+    モデル名.count
+    ```
 - gem
     - React-Rails
         - RailsがwebpackによってビルドされたJavaScriptファイルを読み込めるよう、webpackerのjavascript_pack_tag helperを指定する必要がある
@@ -19,6 +34,9 @@
         - Webpackがrailsで使用できるようになるgem
             - Webpack
                 - Webアプリケーションを構成するリソースを1つにまとめるモジュールバンドラー
+    - Jbuilder
+        - jsonのテンプレートエンジン
+            - xxx.json.jbuilderファイルにDSLを記述するとjson形式でレスポンスを返すことができる
 - rails test実行時にエラー発生
     ```
     xxxx-xx-xx xx:xx:xx WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecated. Use Selenium::WebDriver::Chrome::Service#driver_path= instead.
