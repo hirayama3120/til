@@ -53,6 +53,11 @@
     ```
     hash = { 'a' => 1, 'b' => 2, 'c' => 3 }
     ```
+- ファイルを読み込み改行コードを変換
+    - LFをCRLFに変換
+        ```
+        File.read("sample.txt").encode(:crlf_newline => true)
+        ```
 - 正規表現
    - 正規表現オプション
        - 「m」
