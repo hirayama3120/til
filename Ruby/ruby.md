@@ -58,6 +58,14 @@
         ```
         File.read("sample.txt").encode(:crlf_newline => true)
         ```
+- JSON形式のデータをhashに変換
+    ```
+    JSON.parse(json)
+    ```
+    - hashキーをsymbolキーする
+        ```
+        JSON.parse(json, {:symbolize_names => true})
+        ```
 - 正規表現
    - 正規表現オプション
        - 「m」
