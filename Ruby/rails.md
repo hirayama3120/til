@@ -17,11 +17,17 @@
             ```
             モデル名.where('カラム名 like ?','検索文字列%')
             ```
-
 - レコード数取得
     ```
     モデル名.count
     ```
+- destroyとdeleteの違い
+    - destroy
+        - ActiveRecordを介して削除する
+        - 依存関係があるレコードも削除する
+    - delete
+        - ActiveRecordを介さずに削除
+        - 直接SQLを実行して削除する
 - gem
     - React-Rails
         - RailsがwebpackによってビルドされたJavaScriptファイルを読み込めるよう、webpackerのjavascript_pack_tag helperを指定する必要がある
