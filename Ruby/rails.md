@@ -28,6 +28,11 @@
     - delete
         - ActiveRecordを介さずに削除
         - 直接SQLを実行して削除する
+- render
+    - Viewの表示の制御を行うためのメソッド
+        - オプション
+            - :location オプション
+                - HTTPのLocationヘッダー（リダイレクト先のURL）を設定できる
 - gem
     - React-Rails
         - RailsがwebpackによってビルドされたJavaScriptファイルを読み込めるよう、webpackerのjavascript_pack_tag helperを指定する必要がある
