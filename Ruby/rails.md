@@ -28,6 +28,13 @@
     - delete
         - ActiveRecordを介さずに削除
         - 直接SQLを実行して削除する
+- newとcreateの違い
+    - new
+        - オブジェクトの生成行う
+        - 生成したオブジェクトをsaveすることでDBに保存される
+    - create
+        - オブジェクトの生成と保存を行う
+        - new + save
 - render
     - Viewの表示の制御を行うためのメソッド
         - オプション
