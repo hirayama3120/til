@@ -21,6 +21,10 @@
     ```
     モデル名.count
     ```
+- URLヘルパー
+    - 与えられたコードからパスを推測して返すメソッド
+    - rake routesで取得したPrefixに_path、_urlを付与して使用する
+        - 例: Prefixがrootの場合 -> root_path or root_url
 - destroyとdeleteの違い
     - destroy
         - ActiveRecordを介して削除する
