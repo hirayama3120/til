@@ -25,6 +25,14 @@
     - 与えられたコードからパスを推測して返すメソッド
     - rake routesで取得したPrefixに_path、_urlを付与して使用する
         - 例: Prefixがrootの場合 -> root_path or root_url
+- before_action
+    - Actionが実行される前に指定した処理を行うことが出来る
+    - 各アクションで共通する処理を１箇所に集約することができる
+        - オプション
+            - only: 指定したActionでのみ処理を行う
+                ```
+                before_action :メソッド名, only: [:Action]
+                ```
 - destroyとdeleteの違い
     - destroy
         - ActiveRecordを介して削除する
