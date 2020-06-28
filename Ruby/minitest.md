@@ -31,3 +31,23 @@
         - 2つの値が同じかチェック
     - refute_equal
         - 2つの値が異なるかチェック
+
+- テストデータ登録
+    - Fixture
+        - テスト実行前に対応テーブルのデータを削除してからfixtureのデータを登録する
+        - YAMLで記述し、/test/fixturesに配置
+            ```
+            user1:
+              name: xxx
+              age: xxx
+            ```
+        - テストでのレコード取得
+            ```
+            @user = users(:user1)
+            @user.name
+            ```
+            
+- assert_difference
+    - 第1引数の値がブロック内で変更されることを検証する
+    - 第2引数に期待値を指定する
+        - 省略した場合は、+1になる
