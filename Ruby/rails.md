@@ -21,6 +21,13 @@
     ```
     モデル名.count
     ```
+
+- ActiveReocrdで生成されるSQLを確認
+    - to_sql
+    ```
+    User.all().to_sql -> SELECT "users".* FROM "users"
+    ```
+ 
 - URLヘルパー
     - 与えられたコードからパスを推測して返すメソッド
     - rake routesで取得したPrefixに_path、_urlを付与して使用する
