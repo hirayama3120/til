@@ -74,6 +74,42 @@
     - Jbuilder
         - jsonのテンプレートエンジン
             - xxx.json.jbuilderファイルにDSLを記述するとjson形式でレスポンスを返すことができる
+- resourceベースでないルーティング
+    - usersにアクセスした場合、users_controller.rbのindexソッドが実行される
+        ```
+        get 'users', to: 'users#index'
+        ```
+    - 実行するアクションは省略可能(URLにパラメータを含む場合は省略不可)
+        - URLにパラメータ(:id)を含まない
+            ```
+            namespace :api do
+              delete 'users/destroy'
+            end
+            ```
+            - 実行アクションを省略した場合、自動でアクションが設定される
+                - ルーティング
+                ```
+                           Prefix Verb   URI Pattern                   Controller#Action
+                api_users_destroy DELETE /api/users/destroy(.:format)  api/users#destroy
+                ```
+        - URLにパラメータ(:id)を含む(実行アクション省略)
+            ```
+            namespace :api do
+              delete 'users/:id'
+            end
+            ```
+            - ArgumentErrorが発生する
+        - URLにパラメータ(:id)を含む
+            ```
+            namespace :api do
+              delete 'users/:id', to: 'users#destroy'
+            end
+            ```
+            - ルーティング
+            ```
+            Prefix Verb   URI Pattern              Controller#Action
+               api DELETE /api/users/:id(.:format) api/users#destory
+            ```
 - rails test実行時にエラー発生
     ```
     xxxx-xx-xx xx:xx:xx WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecated. Use Selenium::WebDriver::Chrome::Service#driver_path= instead.
