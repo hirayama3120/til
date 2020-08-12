@@ -59,6 +59,9 @@
         - オプション
             - :location オプション
                 - HTTPのLocationヘッダー（リダイレクト先のURL）を設定できる
+- flashメッセージ
+    - アクション実行後にメッセージを表示させる機能
+    - アクションでflash[:notice]に文字列を代入するとflash[:notice]をビューで使用出来るようになる
 - gem
     - React-Rails
         - RailsがwebpackによってビルドされたJavaScriptファイルを読み込めるよう、webpackerのjavascript_pack_tag helperを指定する必要がある
