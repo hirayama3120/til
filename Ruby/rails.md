@@ -40,6 +40,7 @@
                 ```
                 before_action :メソッド名, only: [:Action]
                 ```
+    - application_controller.rbに定義することで全Controllerで共通する処理を定義出来る
 - destroyとdeleteの違い
     - destroy
         - ActiveRecordを介して削除する
