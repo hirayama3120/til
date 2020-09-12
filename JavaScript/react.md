@@ -1,5 +1,5 @@
 # React
-## UIに特化したJavaScriptフレームワーク
+## UIに特化したJavaScriptライブラリ
 - JSX
     - HTMLの様なタグを直接JavaScriptのスクリプトに記述する仕組み
 - 状態管理
