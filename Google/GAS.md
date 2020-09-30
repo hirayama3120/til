@@ -81,3 +81,8 @@
         return str;
       }
       ```
+   - 処理速度改善
+       - ループ内でGAS API(getValue、setValue等)を毎回呼び出すと遅延につながる(都度、サーバー上のデータ更新、画面反映となるため)
+       - GAS APIの呼び出しを減らすことで改善される
+           - getValue、setValueをgetValues, setValuesにすることで呼び出す回数を削減できる
+           - (２次元配列での取得、書き込みになり、呼び出しが各1回で済むため)
