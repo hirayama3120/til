@@ -82,7 +82,15 @@
           @name
         end
         ```
-
+- between?
+    - 範囲内チェック
+        ```
+        between?(min, max)
+        ```
+    - 以下と同じ
+        ```
+        self >= min and self <= max
+        ```
 - dig
     - ネストしたハッシュから安全に値を取り出すことができる
     - キーが見つからない場合、nilを返す
