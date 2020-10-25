@@ -36,6 +36,10 @@
             ```
             Rangeオブジェクト.getValues();
             ```
+        - 値が存在するセル範囲を取得
+            ```
+            Sheetオブジェクト.getDataRange();
+            ```
     - セル書き込み
         ```
         Rangeオブジェクト.setValue(data);
