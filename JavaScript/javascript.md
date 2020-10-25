@@ -1,4 +1,13 @@
 # JavaScript
+- for文
+    - 通常
+        ```
+        for (let i = 1; i < array.length; i++)
+        ```
+    - ショートハンド
+        ```
+        for (let index in array)
+        ```
 - Fetch API
     - 非同期通信でHTTPリクエスト送信、レスポンスの受け取りが出来る
     - fetch()メソッドを呼び出すことでリクエストを送信できる
