@@ -8,6 +8,16 @@
         ```
         for (let index in array)
         ```
+- テンプレートリテラル
+    ```
+    let tableName = 'sample';
+    Browser.msgBox(`SELECT * FROM ${tableName};`)
+    ```
+    - 以下と同じ
+        ```
+        let tableName = 'sample';
+        Browser.msgBox('SELECT * FROM ' + tableName + ';')
+        ```
 - Fetch API
     - 非同期通信でHTTPリクエスト送信、レスポンスの受け取りが出来る
     - fetch()メソッドを呼び出すことでリクエストを送信できる
