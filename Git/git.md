@@ -47,3 +47,7 @@
         ```
         git stash pop stash@{x}
         ```
+- 行毎に変更された最終コミットを表示
+    ```
+    git blame
+    ```
